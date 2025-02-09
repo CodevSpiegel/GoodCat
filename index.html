@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        GoodCat Tattoo Shop
+    </title>
+    <meta
+      name="description"
+      content="Good Cat Tattoo, Swap et Keaz, Tatoueurs Troyens, proposent leur services artistique dans leur salon au coeur de Troyes pour des tatouages personnalisés. Grand Est // Champagne Ardenne // France"
+    />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap" />
+</head>
+
+<body>
+
+<header id="accueil">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <button class="nav-toggler" aria-controls="main-navlist" aria-expanded="false">
+            <img src="img/hamburger.svg" alt="Ouvrir et fermer le menu" />
+        </button>
+        <ul id="main-navlist">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="#blog">Blog</a></li> -->
+            <!-- <li><a href="#tarifs">Tarifs</a></li> -->
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <h1 class="main-title">Votre salon de tatouage</h1>
+        <p class="main-subtitle">Situé au centre ville de Troyes</p>
+
+        <a href="#about" class="hero-link hero-link-1">
+            <span>À propos</span>
+            <img src="img/pack/010-electric.svg" alt="" />
+        </a>
+        <a href="#contact" class="hero-link hero-link-2">
+            <span>Contact</span>
+            <img src="img/pack/003-location-pin.svg" alt="" />
+        </a>
+
+        <a href="#about" class="push-down-hero">
+            <img src="img/chevron-down.svg" alt="Aller à la section à propos">
+        </a>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <h2 class="section-title">
+            <span>Une style intemporel</span>
+            <img src="img/pack/004-barber-1.svg" alt="" />
+        </h2>
+        <p class="section-subtitle">
+            Patience et expertise à votre service
+        </p>
+
+        <div class="container about-content">
+            <div class="about-text">
+                <h3 class="heading-h3">
+                    <img src="img/pack/024-shave.svg" alt="" />
+                    <span>Vous êtes entre de bonnes mains.</span>
+                </h3>
+                <p>
+                    Votre salon de tatouage vous accueillera dans une ambiance conviviale. A l'écoute de vos futurs projets, nos passionnés sauront vous conseiller pour vos futurs réalisations.
+                </p>
+                <h3 class="heading-h3">
+                    <img src="img/pack/001-barber.svg" alt="" />
+                    <span>L'art de tatouer.</span>
+                </h3>
+                <p>
+                    Issu du milieu du graffiti, Swap se consacre pleinement à l’art du tatouage. Apprentissage des techniques de base du tatouage, conseils de divers tatoueurs et obtention de la formation <strong>hygiène</strong> et <strong>salubrité</strong>.
+                </p>
+            </div>
+            <div 
+                class="about-slideshow" 
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="coupe de cheveux">
+                <div class="slideshow-images-container" role="group">
+                    <img
+                        src="img/tattoo-slide-1.jpg"
+                        aria-roledescription="slide"
+                        alt="Description de l'image 1"
+                        class="active" />
+                    <img
+                        src="img/tattoo-slide-2.jpg"
+                        aria-roledescription="slide"
+                        alt="Description de l'image 2" />
+                    <img
+                        src="img/tattoo-slide-3.jpg"
+                        aria-roledescription="slide"
+                        alt="Description de l'image 3" />
+                </div>
+                <div
+                    class="dots fade-slide-dots"
+                    role="group"
+                    aria-label="Boutons de controle">
+                    <button
+                        class="dot active"
+                        data-fadeIndex="1"
+                        aria-label="Montrer l'image 1"
+                        aria-disabled="true">
+                    </button>
+                    <button
+                        class="dot"
+                        data-fadeIndex="2"
+                        aria-label="Montrer l'image 2"
+                        aria-disabled="false">
+                    </button>
+                    <button
+                        class="dot"
+                        data-fadeIndex="3"
+                        aria-label="Montrer l'image 3"
+                        aria-disabled="false">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End - About section -->
+
+
+    <!-- Prestations section -->
+    <section class="prestations" id="prestations">
+        <h2 class="section-title">
+            <span> Nos Prestations </span>
+            <img src="img/pack/008-comb.svg" alt="" />
+        </h2>
+        <p class="section-subtitle">À la carte</p>
+
+        <div class="container prestations-container">
+            <div class="prestations-card">
+                <h3 class="prestations-category-title">
+                    <span>Lorem</span>
+                    <img src="img/pack/002-barber-pole.svg" alt="" />
+                </h3>
+                <ul class="prestations-list">
+                    <li>
+                        <h4 class="heading-h4">LOREM IPSUM - 180€</h4>
+                        <p>
+                            <strong>Lorem</strong> et
+                            <strong>agnam aliquam.</strong>.
+                        </p>
+                        <p><em>Durée 6 heures</em>.</p>
+                    </li>
+                    <li>
+                        <h4 class="heading-h4">LOREM IPSUM - 812€</h4>
+                        <p>
+                            Lorem ipsum <strong>rerze</strong>, goulrte
+                            <strong>coumas</strong>, <strong>fongque</strong>,
+                            <strong>rabnez</strong>.
+                        </p>
+                        <p><em>Durée 30 minutes</em>.</p>
+                    </li>
+                    <li>
+                        <h4 class="heading-h4">LOREM IPSUM - 25€</h4>
+                        <p>
+                            Rasage classique <strong>traditionnel</strong> au
+                            <strong>coupe choux</strong>(rasoir droit).
+                        </p>
+                        <p>
+                            <em> Durée 45 minutes. </em>
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="heading-h4">SOIN COMPLET - 35€</h4>
+                        <p>
+                            <strong>Serviettes chaudes</strong>, <strong>soins</strong>,
+                            <strong>huiles</strong> et <strong>taille complète.</strong>
+                        </p>
+                        <p><em>Durée 50 minutes.</em></p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="prestations-card">
+                <h3 class="prestations-category-title">
+                    <span>LOREM</span>
+                    <img src="img/pack/023-scissors.svg" alt="" />
+                </h3>
+                <ul class="prestations-list">
+                    <li>
+                        <h4 class="heading-h4">COUPE CLASSIQUE - 20€</h4>
+                        <p>
+                            <strong>Shampoing</strong>, <strong>coupe</strong>,
+                            <strong>coiffage</strong>.
+                        </p>
+                        <p><em>Durée 45mins</em></p>
+                    </li>
+                    <li>
+                        <h4 class="heading-h4">RASAGE DU CRANE AU COUP-CHOU - 20€</h4>
+                        <p>
+                            Rasage au <strong>coupe-chou</strong>, <strong>soins</strong>.
+                        </p>
+                        <p><em>Durée 45 minutes</em></p>
+                    </li>
+                    <li>
+                        <h4 class="heading-h4">UNDERCUT - 25€</h4>
+                        <p>
+                            <strong>Shampoing</strong>,
+                            <strong>dégradé à l’ancienne</strong>.
+                        </p>
+                        <p><em>Durée 45 minutes.</em></p>
+                    </li>
+                    <li>
+                        <h4 class="heading-h4">COUPE BROSSE - 35€</h4>
+                        <p><strong>Coupe militaire</strong> (Flat Top).</p>
+                        <p><em>Durée 45 minutes</em></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End - Prestations section -->
+
+
+    <!-- Team section -->
+    <section class="team">
+        <h2 class="section-title">
+            <span>Les tatoueurs</span>
+            <img src="img/pack/022-brush.svg" alt="" />
+        </h2>
+        <p class="section-subtitle">5 ans de bons et loyaux services</p>
+
+        <div class="container cards-container">
+            <div class="team-card">
+                <img
+                    src="img/Swap.jpg"
+                    alt="photo de Swap"
+                    class="profile-image"
+                />
+                <div class="card-content">
+                    <div class="top-card-content">
+                    <p class="card-name">SWAP</p>
+                    <a href="#">
+                        <img
+                        src="img/instagram.svg"
+                        alt="Visiter la page instagram de John"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                        src="img/x.svg"
+                        alt="Visiter la page X de John"                        
+                        />
+                    </a>
+                    </div>
+                    <p class="card-description">8 ans de savoir-faire</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img
+                    src="img/Keaz.jpg"
+                    alt="photo de joe"
+                    class="profile-image"
+                />
+                <div class="card-content">
+                    <div class="top-card-content">
+                    <p class="card-name">KEAZ</p>
+                    <a href="#">
+                        <img
+                        src="img/instagram.svg"
+                        alt="Visiter la page instagram de Joe"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                        src="img/x.svg"
+                        alt="Visiter la page X de Joe"
+                        />
+                    </a>
+                    </div>
+                    <p class="card-description">5 ans de savoir-faire</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End - Team section -->
+
+
+    <!-- Testimonials section -->
+    <section class="testimonial-section">
+        <div class="text-slideshow-container">
+            <div class="sliding-container">
+                <div class="text-slide">
+                    <p class="testimonial-text">"Le meilleur tatoueur de Troyes"</p>
+                    <p class="testimonial-author">Sébastien Spiegel</p>
+                </div>
+                <div class="text-slide">
+                    <p class="testimonial-text">"Toujours satisfaite"</p>
+                    <p class="testimonial-author">Sylvie Judor</p>
+                </div>
+                <div class="text-slide">
+                    <p class="testimonial-text">"Rapide et efficace"</p>
+                    <p class="testimonial-author">Polo27</p>
+                </div>
+                <div class="text-slide">
+                    <p class="testimonial-text">"Jamais déçu"</p>
+                    <p class="testimonial-author">Nabil</p>
+                </div>
+                <div class="text-slide">
+                    <p class="testimonial-text">"Le meilleur tatoueur de Troyes"</p>
+                    <p class="testimonial-author">Sébastien Spiegel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End - Testimonials section -->
+
+
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">
+            <span>Notre adresse</span>
+            <img src="img/pack/003-location-pin.svg" alt="" />
+        </h2>
+        <p class="section-subtitle">
+            Idéalement situé au centre ville de Troyes
+        </p>
+
+        <div class="container contact-content">
+            <div class="addresses">
+                <div class="address-block">
+                    <p>44 Rue Georges Clemenceau,<br />10000 Troyes</p>
+                    <p>Tel : 06 32 91 05 79</p>
+                    <p>GoodCat Tattoo Shop</p>
+                    <a href="#">
+                    <img
+                        src="img/instagram.svg"
+                        alt="Visiter la page instagram du Barbier Leclerc"
+                    />
+                    </a>
+                    <a href="#">
+                    <img
+                        src="img/facebook.svg"
+                        alt="Visiter la page facebook du Barbier Leclerc"
+                    />
+                    </a>
+                    <a href="#">
+                    <img
+                        src="img/tiktok.svg"
+                        alt="Visiter la page tiktok du Barbier Leclerc"
+                    />
+                    </a>
+                    <a href="#">
+                    <img
+                        src="img/x.svg"
+                        alt="Visiter la page X du Barbier Leclerc"
+                    />
+                    </a>
+                </div>
+            </div>
+
+            <div class="schedule">
+                <div class="schedule-table">
+                    <h3 class="heading-h3">Horaires d'ouverture</h3>
+                    <p><span>Lundi</span> <span>10:00-19:00</span></p>
+                    <p><span>Mardi</span> <span>10:00-19:00</span></p>
+                    <p><span>Mercredi</span> <span>10:00-19:00</span></p>
+                    <p><span>Jeudi</span> <span>10:00-19:00</span></p>
+                    <p><span>Vendredi</span> <span>10:00-19:00</span></p>
+                    <p><span>Samedi</span> <span>10:00-19:00</span></p>
+                    <p><span>Dimanche</span> <span>Fermé</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End - Contact section -->
+
+</main>
+
+
+<footer>
+    <span>GoodCat Tatoo Shop &copy; 2020 - 2025. Tous droits réservés.</span>
+</footer>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
