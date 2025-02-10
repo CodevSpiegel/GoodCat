@@ -10,11 +10,11 @@ navToggler.addEventListener("click", toggleNav)
 function toggleNav(){
     nav.classList.toggle("active");
     if(togglerImg.src.includes("hamburger")) {
-        togglerImg.src = "img/cross.svg";
+        togglerImg.src = "img/cross.png";
         navToggler.ariaExpanded = true;
     }
     else {
-        togglerImg.src = "img/hamburger.svg";
+        togglerImg.src = "img/menu-hamburger.png";
         navToggler.ariaExpanded = false;
     }
 }
@@ -68,11 +68,22 @@ function handleSmoothScroll(e) {
   e.preventDefault();
 
   const linkHref = e.target.getAttribute("href").substring(1);
+
+
+  const el = document.getElementById('main-nav');
  
+  // inclu les padding, border & scrollbar.
+  console.log(el.offsetHeight);
+
+  // inclu les padding.
+  console.log(el.clientHeight);
+
   window.scrollTo({
-    top: document.getElementById(linkHref).offsetTop * 0.95,
+    top: document.getElementById(linkHref).offsetTop - el.offsetHeight,
     behavior: "smooth"
   })
+
+  // console.log(document.getElementById(linkHref).offsetTop);
 
   window.history.pushState("", "", `${document.location.pathname}#${linkHref}`)
 }

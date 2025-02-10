@@ -11,6 +11,7 @@
     --main-white: #dddddd;
     --shade-white: #d3d3d3;
     --main-black: #181818;
+    --dark-black: #000000;
     --main-yellow: #e6d28c;
     --dark-yellow: #f4cb38;
 
@@ -146,8 +147,8 @@ body {
     top: 0;
     width: 100%;
     padding: 16px;
-    background-color: var(--main-yellow);
-    border-bottom: 1px solid var(--main-black);
+    background-color: var(--dark-black);
+    border-bottom: 1px solid var(--dark-black);
 }
 
 .main-nav ul {
@@ -160,16 +161,15 @@ body {
     margin: 0 12px;
     padding: 8px;
     border-radius: 2px;
-    color: var(--main-black);
+    color: var(--main-yellow);
     font-weight: 700;
     text-transform: uppercase;
-    text-decoration-style: dotted;
-    text-underline-offset: 4px;
+    text-decoration: none;
 }
 
 .main-nav a:hover {
-    background-color: var(--main-black);
-    color: var(--main-yellow);
+    /* background-color: var(--main-yellow); */
+    color: var(--main-white);
 }
 
 .nav-toggler {
@@ -244,7 +244,7 @@ body {
 
 .hero-link {
     min-width: 155px;
-    padding: 8px 12px;
+    padding: 4px 12px;
     border-radius: 5px;
     display: inline-flex;
     justify-content: center;
@@ -256,7 +256,7 @@ body {
 }
 
 .hero-link span {
-    text-decoration: underline dotted;
+    /* text-decoration: underline dotted; */
     text-decoration-color: var(--main-black);
     text-underline-offset: 4px;
     position: relative;
@@ -264,8 +264,8 @@ body {
 }
 
 .hero-link img {
-    margin-left: 2px;
-    width: 24px;
+    margin-left: 4px;
+    width: 36px;
 }
 
 .hero-link span,
@@ -488,7 +488,7 @@ body {
 }
 
 .prestations .section-title img {
-    transform: rotate(5deg);
+    /* transform: rotate(5deg); */
 }
 
 .prestations-container {
@@ -521,9 +521,9 @@ body {
 }
 
 .prestations-category-title img {
-    width: 36px;
+    width: 50px;
     margin-left: 12px;
-    transform: rotateY(-180deg);
+    /* transform: rotateY(-180deg); */
 }
 
 .prestations-list {
@@ -790,6 +790,32 @@ body {
 }
 /* End - Testimonials section */
 
+/* Gallery section */
+.gallery {
+  padding: 50px 20px 100px;
+  background-color: var(--dark-black);
+}
+
+.gallery .section-title,
+.gallery .section-subtitle {
+    color: var(--main-white);
+}
+
+.gallery-content {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-content img {
+  width: 160px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+
+
+/* End - Gallery section */
+
 
 /* Contact section */
 .contact {
@@ -896,6 +922,8 @@ body {
 footer {
   padding: 12px;
   text-align: center;
+  font-size: var(--fs-14);
+  font-weight: normal;
   background-color: var(--main-black);
   color: var(--main-white);
 }
